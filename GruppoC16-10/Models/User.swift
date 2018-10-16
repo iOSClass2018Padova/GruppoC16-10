@@ -30,6 +30,27 @@ import RealmSwift
         self.password = password
         self.imageProfile = imageProfile
         self.isAdmin = isAdmin
+    }
+    
+    // MARK: - Realms tuff
+    
+    func save(in realm: Realm = try! Realm()) {
         
+        do {
+            try realm.write {
+                realm.add(self)
+            }
+        }
+        catch {}
+    }
+    
+    
+   static func checkLogin(email1: String, password1: String) -> User? {
+    
+        // Get the default Realm
+        let realm = try! Realm()
+        
+        // Query Realm
+        return realm.objects(User.self).filter({ $0.email == email1 && $0.password == password1 }).first
     }
 }
