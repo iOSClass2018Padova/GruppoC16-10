@@ -10,8 +10,9 @@ import UIKit
 
 class SalaCell: UICollectionViewCell {
     
-    static let kidentifier = "CellSala"
+    static let kidentifier = "SalaCell"
     
-    @IBOutlet var LabelField: [UILabel]!
+    @IBOutlet weak var btn: UIButton!
+    
     
 }
