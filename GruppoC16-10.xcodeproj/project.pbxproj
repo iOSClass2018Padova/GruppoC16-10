@@ -16,6 +16,9 @@
 		6EDA6F482175CB98002BA7FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA6F462175CB98002BA7FA /* LaunchScreen.storyboard */; };
 		6EDA6F532175CB98002BA7FA /* GruppoC16_10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F522175CB98002BA7FA /* GruppoC16_10Tests.swift */; };
 		6EDA6F5E2175CB98002BA7FA /* GruppoC16_10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F5D2175CB98002BA7FA /* GruppoC16_10UITests.swift */; };
+		6EDA6F6D2175DCDD002BA7FA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F6C2175DCDD002BA7FA /* User.swift */; };
+		6EDA6F6F2175DE28002BA7FA /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F6E2175DE28002BA7FA /* Ticket.swift */; };
+		6EDA6F712175E15C002BA7FA /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F702175E15C002BA7FA /* Film.swift */; };
 		B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1B2175CDE8004DF561 /* Extensions.swift */; };
 		B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1D2175CE24004DF561 /* RealmUtils.swift */; };
 		B33DED232175D92F004DF561 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33DED222175D92F004DF561 /* Register.storyboard */; };
@@ -57,6 +60,9 @@
 		6EDA6F592175CB98002BA7FA /* GruppoC16-10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GruppoC16-10UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA6F5D2175CB98002BA7FA /* GruppoC16_10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GruppoC16_10UITests.swift; sourceTree = "<group>"; };
 		6EDA6F5F2175CB98002BA7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EDA6F6C2175DCDD002BA7FA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6EDA6F6E2175DE28002BA7FA /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		6EDA6F702175E15C002BA7FA /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		89E42E1B8909403522F0AF0E /* Pods-GruppoC16-10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GruppoC16-10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GruppoC16-10/Pods-GruppoC16-10.debug.xcconfig"; sourceTree = "<group>"; };
 		B33DED1B2175CDE8004DF561 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B33DED1D2175CE24004DF561 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
@@ -132,9 +138,9 @@
 		6EDA6F3C2175CB97002BA7FA /* GruppoC16-10 */ = {
 			isa = PBXGroup;
 			children = (
+				6EDA6F6B2175DCA3002BA7FA /* Models */,
 				B33DED1D2175CE24004DF561 /* RealmUtils.swift */,
 				B33DED1B2175CDE8004DF561 /* Extensions.swift */,
-				375486D62175E1D800AC6BAF /* Models */,
 				B33DED152175CD3C004DF561 /* Login */,
 				B33DED162175CD42004DF561 /* Register */,
 				B33DED1A2175CD96004DF561 /* FilmDetails */,
@@ -167,6 +173,16 @@
 				6EDA6F5F2175CB98002BA7FA /* Info.plist */,
 			);
 			path = "GruppoC16-10UITests";
+			sourceTree = "<group>";
+		};
+		6EDA6F6B2175DCA3002BA7FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EDA6F6C2175DCDD002BA7FA /* User.swift */,
+				6EDA6F6E2175DE28002BA7FA /* Ticket.swift */,
+				6EDA6F702175E15C002BA7FA /* Film.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9A1E0A21B9B253F965184B36 /* Frameworks */ = {
@@ -408,10 +424,12 @@
 			files = (
 				B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */,
 				6EDA6F402175CB97002BA7FA /* ViewController.swift in Sources */,
+				6EDA6F6F2175DE28002BA7FA /* Ticket.swift in Sources */,
 				B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */,
 				B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */,
+				6EDA6F6D2175DCDD002BA7FA /* User.swift in Sources */,
 				6EDA6F3E2175CB97002BA7FA /* AppDelegate.swift in Sources */,
-				375486D52175DF7A00AC6BAF /* LoginController.swift in Sources */,
+				6EDA6F712175E15C002BA7FA /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
