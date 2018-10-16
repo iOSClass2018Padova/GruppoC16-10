@@ -17,6 +17,8 @@ class LoginController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //User(name: "sarah", surname: "dalsanto", email: "sarah@gmail.it", password: "sarah", imageProfile: nil, isAdmin: false).save()
     }
     
     
@@ -51,6 +53,7 @@ class LoginController: UIViewController {
     @IBAction func register(_ sender: UIButton) {
         //faccio partire la pagina per la registrazione
         self.dismiss(animated: true, completion: nil)
+        //self.performSegue(withIdentifier: Dictionary.segueRegistration, sender: self)
     }
     
     /*
