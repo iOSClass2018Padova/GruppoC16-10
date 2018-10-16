@@ -18,7 +18,7 @@ class LoginController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        //User(name: "sarah", surname: "dalsanto", email: "sarah@gmail.it", password: "sarah", imageProfile: nil, isAdmin: false).save()
+       // User(name: "sarah", surname: "dalsanto", email: "sarah@gmail.it", password: "sarahh", imageProfile: nil, isAdmin: false).save()
     }
     
     

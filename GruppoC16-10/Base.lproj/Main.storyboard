@@ -8,16 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FilmDetails-->
-        <scene sceneID="75S-Ij-yz4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="FilmDetails" id="gxm-a0-3Ut" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9KO-iP-J3Q"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b0V-9p-tRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1119" y="610"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4w5-Jh-a4M">
             <objects>
@@ -29,12 +19,20 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gxm-a0-3Ut" kind="relationship" relationship="rootViewController" id="2qu-pJ-Luy"/>
+                        <segue destination="luY-dr-02P" kind="show" id="wBH-xe-EMR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tV6-mb-X1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="780.35982008995506"/>
+        </scene>
+        <!--Homepage-->
+        <scene sceneID="SgD-wx-dcc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Homepage" id="luY-dr-02P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbc-XF-iWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="650"/>
         </scene>
     </scenes>
 </document>
