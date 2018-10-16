@@ -9,42 +9,65 @@
 import UIKit
 
 class SalaController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
-
+    private var ListPlaces : [Ticket] = []
     
-
+    
     
     @IBOutlet private weak var CollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        for i in 0..<30 {
+            ListPlaces.append(Ticket(film: "Posto \(i)"))
+        }
+        
+        
     }
-
-
-   
-
+    
+    
+    
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-
-
-     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return ListPlaces.count
     }
-
-   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SalaCell.kidentifier, for: indexPath) as! SalaCell
-    
+        cell.btn.setTitle(ListPlaces[indexPath.row].idFilm, for: .normal)
+        
+        
+        
+        
+        
         return cell
-}
-  
-   
+    }
+    
+    @IBAction func ActionTickets(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: Dictionary.segueTickets, sender: self)
+    }
     
     
     
     
-    
-    
-    
+    @IBAction func actionPlace(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Prenotazione", message: "Vuoi selezionare questo posto?", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        alert.addAction(cancel)
+        let okay = UIAlertAction(title: "Si", style: .default) { (alert) in
+            
+            
+            
+            
+        }
+        alert.addAction(okay)
+        self.present(alert, animated: true, completion: nil)
+        CollectionView.reloadData()
+    }
     
 }
