@@ -28,11 +28,11 @@ extension TicketViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return userLog?.getTicketList().count ?? 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TicketCell", for: indexPath) as! TicketCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: TicketCell.kIdent, for: indexPath) as! TicketCell
         return cell
     }
     

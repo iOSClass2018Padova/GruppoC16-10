@@ -9,6 +9,8 @@
 import UIKit
 
 class TicketCell: UITableViewCell {
+    
+    static let kIdent = "TicketCell"
 
     @IBOutlet weak var imageTicket: UIImageView!{
         didSet{
