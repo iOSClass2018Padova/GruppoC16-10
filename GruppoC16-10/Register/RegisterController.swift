@@ -54,7 +54,7 @@ class RegisterController: UIViewController {
             if let controller = segue.destination as? UserProfileController {
                 
                 // pass the email and password
-                controller.viewState = UserProfileController.ControllerState.ADDING
+                controller.viewState = UserProfileController.ControllerState.EDITING
                 controller.pushData(email: emailField.text!, password: passwordField.text!)
             }
         }
