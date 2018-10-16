@@ -18,6 +18,8 @@
 		6EDA6F5E2175CB98002BA7FA /* GruppoC16_10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F5D2175CB98002BA7FA /* GruppoC16_10UITests.swift */; };
 		B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1B2175CDE8004DF561 /* Extensions.swift */; };
 		B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1D2175CE24004DF561 /* RealmUtils.swift */; };
+		B33DED232175D92F004DF561 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33DED222175D92F004DF561 /* Register.storyboard */; };
+		B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED242175DE9E004DF561 /* RegisterController.swift */; };
 		F4F0F70BDFCD923B3E62AFAE /* Pods_GruppoC16_10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D567C65B184E68384A7420C9 /* Pods_GruppoC16_10.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		89E42E1B8909403522F0AF0E /* Pods-GruppoC16-10.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GruppoC16-10.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GruppoC16-10/Pods-GruppoC16-10.debug.xcconfig"; sourceTree = "<group>"; };
 		B33DED1B2175CDE8004DF561 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B33DED1D2175CE24004DF561 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
+		B33DED222175D92F004DF561 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		B33DED242175DE9E004DF561 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		D567C65B184E68384A7420C9 /* Pods_GruppoC16_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GruppoC16_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -185,6 +189,8 @@
 		B33DED162175CD42004DF561 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				B33DED222175D92F004DF561 /* Register.storyboard */,
+				B33DED242175DE9E004DF561 /* RegisterController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */,
 				6EDA6F402175CB97002BA7FA /* ViewController.swift in Sources */,
 				B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */,
 				B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */,
