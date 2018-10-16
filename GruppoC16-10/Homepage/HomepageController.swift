@@ -1,5 +1,5 @@
 //
-//  FilmDetailsController.swift
+//  HomepageController.swift
 //  GruppoC16-10
 //
 //  Created by Leonardo De Benetti on 16/10/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FilmDetailsController: UIViewController {
+class HomepageController: UIViewController {
     
     //private var listOfFilm : [Film] = []
     
@@ -28,7 +28,7 @@ class FilmDetailsController: UIViewController {
     }
 }
 
-extension FilmDetailsController : UITableViewDelegate, UITableViewDataSource {
+extension HomepageController : UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Table view data source
     
@@ -44,7 +44,7 @@ extension FilmDetailsController : UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: FilmDetailsCell.kIdentifier, for: indexPath) as! FilmDetailsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomepageCell.kIdentifier, for: indexPath) as! HomepageCell
         
         if let imageFilm = listOfFilm[indexPath.row].image {
             cell.imageFilm.image = UIImage(data: imageFilm)

@@ -1,5 +1,5 @@
 //
-//  FilmDetailsCell.swift
+//  HomepageCell.swift
 //  GruppoC16-10
 //
 //  Created by Leonardo De Benetti on 16/10/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class FilmDetailsCell: UITableViewCell {
+class HomepageCell: UITableViewCell {
     
-    static let kIdentifier = "FilmDetailsCell"
+    static let kIdentifier = "HomepageCell"
 
     @IBOutlet weak var imageFilm: UIImageView!
     
