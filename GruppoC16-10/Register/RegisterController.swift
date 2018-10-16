@@ -24,23 +24,33 @@ class RegisterController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     //
     // OnClick on GO button
     // Verify input integrity and go to next step
     //
     @IBAction func goButtonClick(_ sender: UIButton) {
-        
+        if emailField.isEmailValid() && passwordField.isPasswordValid()
+            && passwordField.text == repeatPasswordField.text {
+            
+            // ok go with other stuff
+        }
+        else {
+            // show error message
+            let alert = UIAlertController(title: "Errore", message: "I dati inseriti non sono corretti", preferredStyle: .alert)
+            let cancel = UIAlertAction(title: "Ho capito", style: .default, handler: nil)
+            alert.addAction(cancel)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }
