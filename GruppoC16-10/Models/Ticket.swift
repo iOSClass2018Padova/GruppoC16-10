@@ -22,5 +22,6 @@ import RealmSwift
         self.place = place
         self.time = time
     }
+    
 
 }

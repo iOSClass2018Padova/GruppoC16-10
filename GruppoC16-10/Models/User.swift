@@ -53,4 +53,10 @@ import RealmSwift
         // Query Realm
         return realm.objects(User.self).filter({ $0.email == email1 && $0.password == password1 }).first
     }
+    
+    func getTicketList()->[Ticket]{
+        return Array(tickets)
+    }
+    
+    
 }

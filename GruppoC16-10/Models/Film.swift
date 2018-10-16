@@ -37,5 +37,9 @@ import RealmSwift
     static func all(in realm: Realm = try! Realm(configuration: RealmUtils.config)) -> [Film] {
         return Array(realm.objects(Film.self))
     }
+    
+    func getTickes() -> [Ticket] {
+        return Array(tickets)
+    }
 
 }
