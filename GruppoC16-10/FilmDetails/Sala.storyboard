@@ -25,6 +25,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="tQ2-WA-3VJ">
                                             <connections>
                                                 <action selector="ActionTickets:" destination="3M0-fz-Wtm" id="fJX-Xc-1hF"/>
+                                                <segue destination="X6m-22-8Xh" kind="show" identifier="SegueTickets" id="AWH-km-AXh"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -80,6 +81,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emf-xb-TMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42.399999999999999" y="91.304347826086968"/>
+        </scene>
+        <!--Tickets-->
+        <scene sceneID="I1Q-k0-yet">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tickets" id="X6m-22-8Xh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gax-lF-Omj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511" y="-151"/>
         </scene>
     </scenes>
 </document>

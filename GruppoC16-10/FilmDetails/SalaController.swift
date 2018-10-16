@@ -71,4 +71,16 @@ class SalaController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Dictionary.segueTickets:
+            if let destinationController = segue.destination as? TicketViewController {
+                destinationController.idFilm = idFilm
+                destinationController.userLog = User.getUserById(id: self.idUser)
+            }
+        default:
+            break
+        }
+    }
+    
 }
