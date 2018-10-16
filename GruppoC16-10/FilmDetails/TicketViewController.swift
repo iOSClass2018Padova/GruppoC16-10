@@ -12,7 +12,7 @@ class TicketViewController: UIViewController {
     
     var idUser : User!
     var idFilm : String!
-    var listOfTicket : [Ticket]!
+    var listOfTicket : [Ticket]! 
 
     @IBOutlet weak var tableView: UITableView!
     
