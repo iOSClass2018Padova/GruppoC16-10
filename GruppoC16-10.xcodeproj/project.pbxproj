@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375486D32175D98D00AC6BAF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375486D22175D98D00AC6BAF /* Login.storyboard */; };
+		375486D52175DF7A00AC6BAF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375486D42175DF7A00AC6BAF /* LoginController.swift */; };
 		6EDA6F3E2175CB97002BA7FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F3D2175CB97002BA7FA /* AppDelegate.swift */; };
 		6EDA6F402175CB97002BA7FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA6F3F2175CB97002BA7FA /* ViewController.swift */; };
 		6EDA6F432175CB97002BA7FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EDA6F412175CB97002BA7FA /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		282EC7938DCB528011C92260 /* Pods-GruppoC16-10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GruppoC16-10.release.xcconfig"; path = "Pods/Target Support Files/Pods-GruppoC16-10/Pods-GruppoC16-10.release.xcconfig"; sourceTree = "<group>"; };
+		375486D22175D98D00AC6BAF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		375486D42175DF7A00AC6BAF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		6EDA6F3A2175CB97002BA7FA /* GruppoC16-10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GruppoC16-10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EDA6F3D2175CB97002BA7FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EDA6F3F2175CB97002BA7FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,13 @@
 				282EC7938DCB528011C92260 /* Pods-GruppoC16-10.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		375486D62175E1D800AC6BAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6EDA6F312175CB97002BA7FA = {
@@ -185,6 +196,8 @@
 		B33DED152175CD3C004DF561 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				375486D22175D98D00AC6BAF /* Login.storyboard */,
+				375486D42175DF7A00AC6BAF /* LoginController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -335,7 +348,7 @@
 				6EDA6F482175CB98002BA7FA /* LaunchScreen.storyboard in Resources */,
 				6EDA6F452175CB98002BA7FA /* Assets.xcassets in Resources */,
 				6EDA6F432175CB97002BA7FA /* Main.storyboard in Resources */,
-				B33DED232175D92F004DF561 /* Register.storyboard in Resources */,
+				375486D32175D98D00AC6BAF /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
