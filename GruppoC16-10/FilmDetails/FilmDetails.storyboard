@@ -24,59 +24,75 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilmDetailsCell" rowHeight="195" id="sTx-jr-REs" userLabel="FilmDetailsCell" customClass="FilmDetailsCell" customModule="GruppoC16_10" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sTx-jr-REs" id="i9F-Ar-OpP">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sTx-jr-REs" id="i9F-Ar-OpP">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="194.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironman3" translatesAutoresizingMaskIntoConstraints="NO" id="ufy-Ls-G8W" userLabel="imageFilm">
-                                                    <rect key="frame" x="20" y="16" width="114" height="160"/>
+                                                    <rect key="frame" x="15" y="16" width="114" height="160"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="114" id="ERG-qO-uBD"/>
                                                         <constraint firstAttribute="height" constant="160" id="fdN-hD-D6H"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq6-wB-Hz6" userLabel="titleFilm">
-                                                    <rect key="frame" x="142" y="59" width="168" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq6-wB-Hz6" userLabel="titleFilm">
+                                                    <rect key="frame" x="137" y="30" width="213" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-pu-VKK" userLabel="timesFilm">
+                                                    <rect key="frame" x="137" y="68" width="173" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-pu-VKK" userLabel="timeFilm">
-                                                    <rect key="frame" x="142" y="30" width="168" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BL-0p-g0h" userLabel="descriptionFilm">
-                                                    <rect key="frame" x="142" y="86" width="168" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="descr" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BL-0p-g0h" userLabel="descrFilm">
+                                                    <rect key="frame" x="137" y="95" width="213" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="9uN-VI-5VQ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ufy-Ls-G8W" firstAttribute="leading" secondItem="i9F-Ar-OpP" secondAttribute="leadingMargin" constant="5" id="2bT-6U-39G"/>
+                                                <constraint firstItem="ufy-Ls-G8W" firstAttribute="leading" secondItem="i9F-Ar-OpP" secondAttribute="leadingMargin" id="2bT-6U-39G"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Kfa-pu-VKK" secondAttribute="trailing" constant="50" id="3Ke-Wn-Dd2"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ufy-Ls-G8W" secondAttribute="bottom" constant="5" id="7SC-nw-FIE"/>
+                                                <constraint firstItem="oq6-wB-Hz6" firstAttribute="leading" secondItem="ufy-Ls-G8W" secondAttribute="trailing" constant="8" id="Bt4-j8-9nc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3BL-0p-g0h" secondAttribute="bottom" constant="9" id="PFd-IC-4Rd"/>
+                                                <constraint firstItem="oq6-wB-Hz6" firstAttribute="top" secondItem="i9F-Ar-OpP" secondAttribute="topMargin" constant="19" id="SYo-Nr-q0b"/>
+                                                <constraint firstItem="Kfa-pu-VKK" firstAttribute="top" secondItem="oq6-wB-Hz6" secondAttribute="bottom" constant="8" id="Sod-I4-RZZ"/>
+                                                <constraint firstItem="3BL-0p-g0h" firstAttribute="top" secondItem="Kfa-pu-VKK" secondAttribute="bottom" constant="6" id="TZ7-cv-TiU"/>
                                                 <constraint firstItem="ufy-Ls-G8W" firstAttribute="top" secondItem="i9F-Ar-OpP" secondAttribute="topMargin" constant="5" id="U2O-y2-pHH"/>
-                                                <constraint firstItem="3BL-0p-g0h" firstAttribute="top" secondItem="oq6-wB-Hz6" secondAttribute="bottom" constant="6" id="Vb3-cp-rqB"/>
-                                                <constraint firstItem="Kfa-pu-VKK" firstAttribute="top" secondItem="i9F-Ar-OpP" secondAttribute="topMargin" constant="19" id="WK1-tO-00c"/>
-                                                <constraint firstItem="Kfa-pu-VKK" firstAttribute="leading" secondItem="ufy-Ls-G8W" secondAttribute="trailing" constant="8" id="Wp3-Ae-vmH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oq6-wB-Hz6" secondAttribute="trailing" constant="10" id="a5K-ic-THO"/>
                                                 <constraint firstItem="3BL-0p-g0h" firstAttribute="leading" secondItem="ufy-Ls-G8W" secondAttribute="trailing" constant="8" id="aLI-nG-yw6"/>
-                                                <constraint firstItem="oq6-wB-Hz6" firstAttribute="top" secondItem="Kfa-pu-VKK" secondAttribute="bottom" constant="8" id="d8r-pl-wzo"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3BL-0p-g0h" secondAttribute="trailing" constant="50" id="jSv-XF-CL0"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Kfa-pu-VKK" secondAttribute="trailing" constant="50" id="kKc-11-2zP"/>
-                                                <constraint firstItem="oq6-wB-Hz6" firstAttribute="leading" secondItem="ufy-Ls-G8W" secondAttribute="trailing" constant="8" id="o8C-Ky-6r1"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="oq6-wB-Hz6" secondAttribute="trailing" constant="50" id="sDM-H7-swt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3BL-0p-g0h" secondAttribute="trailing" constant="10" id="jSv-XF-CL0"/>
+                                                <constraint firstItem="Kfa-pu-VKK" firstAttribute="leading" secondItem="ufy-Ls-G8W" secondAttribute="trailing" constant="8" id="xDs-wK-kb3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descrFilm" destination="3BL-0p-g0h" id="h5q-XL-vuC"/>
+                                            <outlet property="imageFilm" destination="ufy-Ls-G8W" id="wZq-Lw-B3l"/>
+                                            <outlet property="timesFilm" destination="Kfa-pu-VKK" id="yoH-pw-IP1"/>
+                                            <outlet property="titleFilm" destination="oq6-wB-Hz6" id="9Be-n0-IpV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EKo-aa-fm0" id="xvG-xq-Qgc"/>
+                                    <outlet property="delegate" destination="EKo-aa-fm0" id="MqD-Ds-ltZ"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-vE-IIM">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="chI-SI-xaf">
-                                        <barButtonItem key="rightBarButtonItem" title="Profile" id="VBk-ST-d8R"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="profile" id="VBk-ST-d8R">
+                                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -104,5 +120,6 @@
     </scenes>
     <resources>
         <image name="ironman3" width="235" height="336"/>
+        <image name="profile" width="18" height="18"/>
     </resources>
 </document>

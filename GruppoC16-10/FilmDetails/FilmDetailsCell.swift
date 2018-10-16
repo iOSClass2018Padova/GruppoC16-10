@@ -9,7 +9,17 @@
 import UIKit
 
 class FilmDetailsCell: UITableViewCell {
+    
+    static let kIdentifier = "FilmDetailsCell"
 
+    @IBOutlet weak var imageFilm: UIImageView!
+    
+    @IBOutlet weak var titleFilm: UILabel!
+    
+    @IBOutlet weak var timesFilm: UILabel!
+    
+    @IBOutlet weak var descrFilm: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
