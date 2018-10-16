@@ -34,6 +34,7 @@ class RegisterController: UIViewController {
             && passwordField.text == repeatPasswordField.text {
             
             // ok go with other stuff
+            
         }
         else {
             // show error message

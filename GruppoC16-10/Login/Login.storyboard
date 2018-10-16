@@ -81,7 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="umi-me-BXy"/>
                     </view>
                     <connections>
-                        <outlet property="emailOutlet" destination="UeA-pD-0jM" id="bgf-IQ-z6t"/>
+                        <outlet property="emailOutlet" destination="UeA-pD-0jM" id="NXD-fP-LSJ"/>
                         <outlet property="passwordOutlet" destination="YWR-uQ-T91" id="Wht-Nw-iZF"/>
                     </connections>
                 </viewController>

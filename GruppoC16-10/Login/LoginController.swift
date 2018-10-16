@@ -40,8 +40,8 @@ class LoginController: UIViewController {
     //funzione per controllare le credenziali di accesso
     func loginControl() {
         //prendo i testi delle textfield
-        var emailText: String = emailOutlet.text
-        var passwordText: String = passwordOutlet.text
+        //var emailText: String = emailOutlet.text ??
+        //var passwordText: String = passwordOutlet.text!
         
         
     }

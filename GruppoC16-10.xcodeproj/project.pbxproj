@@ -21,6 +21,10 @@
 		B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1B2175CDE8004DF561 /* Extensions.swift */; };
 		B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1D2175CE24004DF561 /* RealmUtils.swift */; };
 		B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED242175DE9E004DF561 /* RegisterController.swift */; };
+		B3F482312175FA580017A5ED /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375486D42175DF7A00AC6BAF /* LoginController.swift */; };
+		B3F482322175FB230017A5ED /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33DED222175D92F004DF561 /* Register.storyboard */; };
+		B3F482352175FBB70017A5ED /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F482332175FBB70017A5ED /* UserProfileController.swift */; };
+		B3F482362175FBB70017A5ED /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F482342175FBB70017A5ED /* UserProfile.storyboard */; };
 		F4F0F70BDFCD923B3E62AFAE /* Pods_GruppoC16_10.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D567C65B184E68384A7420C9 /* Pods_GruppoC16_10.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,8 @@
 		B33DED1D2175CE24004DF561 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
 		B33DED222175D92F004DF561 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		B33DED242175DE9E004DF561 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		B3F482332175FBB70017A5ED /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		B3F482342175FBB70017A5ED /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		D567C65B184E68384A7420C9 /* Pods_GruppoC16_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GruppoC16_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,6 +211,8 @@
 		B33DED172175CD48004DF561 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				B3F482342175FBB70017A5ED /* UserProfile.storyboard */,
+				B3F482332175FBB70017A5ED /* UserProfileController.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -339,7 +347,9 @@
 				6EDA6F482175CB98002BA7FA /* LaunchScreen.storyboard in Resources */,
 				6EDA6F452175CB98002BA7FA /* Assets.xcassets in Resources */,
 				6EDA6F432175CB97002BA7FA /* Main.storyboard in Resources */,
+				B3F482362175FBB70017A5ED /* UserProfile.storyboard in Resources */,
 				375486D32175D98D00AC6BAF /* Login.storyboard in Resources */,
+				B3F482322175FB230017A5ED /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +427,11 @@
 				6EDA6F402175CB97002BA7FA /* ViewController.swift in Sources */,
 				6EDA6F6F2175DE28002BA7FA /* Ticket.swift in Sources */,
 				B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */,
+				B3F482312175FA580017A5ED /* LoginController.swift in Sources */,
 				B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */,
 				6EDA6F6D2175DCDD002BA7FA /* User.swift in Sources */,
 				6EDA6F3E2175CB97002BA7FA /* AppDelegate.swift in Sources */,
+				B3F482352175FBB70017A5ED /* UserProfileController.swift in Sources */,
 				6EDA6F712175E15C002BA7FA /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
