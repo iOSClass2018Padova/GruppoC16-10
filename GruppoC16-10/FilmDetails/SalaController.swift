@@ -37,6 +37,14 @@ class SalaController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
         return cell
 }
+  
+   
+    
+    
+    
+    
+    
+    
     
     
 }

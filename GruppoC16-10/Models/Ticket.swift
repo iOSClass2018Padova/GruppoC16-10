@@ -13,12 +13,16 @@ import RealmSwift
     
     dynamic var idFilm : String?
     dynamic var ticket : Ticket?
+    dynamic var times : String?
+    dynamic var places : Int?
     
-    convenience init (film idFilm : String?, ticket : Ticket? = nil){
+    convenience init (film idFilm : String?, ticket : Ticket? = nil, times : String? = nil, places : Int? = nil){
         self.init()
         
         self.idFilm = idFilm
         self.ticket = ticket
+        self.times = times
+        self.places = places
     }
 
 }

@@ -22,7 +22,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Sale" id="Oab-1v-o2F">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="tQ2-WA-3VJ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Tickets" id="tQ2-WA-3VJ">
+                                            <connections>
+                                                <action selector="ActionTickets:" destination="3M0-fz-Wtm" id="1ss-hQ-6Uh"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
