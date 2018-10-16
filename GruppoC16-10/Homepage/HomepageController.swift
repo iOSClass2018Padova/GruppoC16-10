@@ -12,6 +12,10 @@ class HomepageController: UIViewController {
     
     //private var listOfFilm : [Film] = []
     
+    private var selectedFilm : Film?
+    var idUser : String!
+
+    var userLogin : User = User()
     
     var listOfFilm : [Film] = [
         Film(title: "Iron Man 3", descr: "At a New Year's Eve party in 1999, Tony Stark meets scientist Maya Hansen, the inventor of experimental regenerative treatment Extremis that allows recovery from crippling injuries.", image: nil, outputDate: "12-12-2010", places: 12),
@@ -26,6 +30,25 @@ class HomepageController: UIViewController {
         super.viewDidLoad()
     
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Dictionary.segueRoom:
+            if let destinationController = segue.destination as? SalaController {
+                destinationController.idFilm = selectedFilm?.id
+                destinationController.idUser = idUser
+            }
+        default:
+            break
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedFilm = listOfFilm[indexPath.row]
+        self.performSegue(withIdentifier: Dictionary.segueRoom, sender: self)
+    }
+    
 }
 
 extension HomepageController : UITableViewDelegate, UITableViewDataSource {
@@ -63,4 +86,11 @@ extension HomepageController : UITableViewDelegate, UITableViewDataSource {
         return 195
     }
     
+}
+
+extension HomepageController {
+    
+    func pushUser(user : User) {
+        userLogin = user
+    }
 }
