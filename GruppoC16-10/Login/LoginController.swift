@@ -11,7 +11,7 @@ import UIKit
 class LoginController: UIViewController {
     
     
-    
+    var user : User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,24 +28,31 @@ class LoginController: UIViewController {
     
     
     @IBAction func login(_ sender: UIButton) {
-        //faccio dei controlli e poi passo alla lista film
-        loginControl()
+    
+        //prendo i testi delle textfield
+        var emailText: String = emailOutlet.text
+        var passwordText: String = passwordOutlet.text
+    
+        user = User.checkLogin(email1: String, password1: String)
+        
+        //se user non è nil
+        if let u = user{
+            //vado alla home page (lista film)
+            self.performSegueWithIdentifier("loginIdentifier", sender: self)
+        }else{
+            //faccio un alert dove dico che la mail o la password sono sbagliate
+            let alert = UIAlertController(title: "Attenzione", message: "email o password sbagliata", preferredStyle: .alert)
+            let okay = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            alert.addAction(okay)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func register(_ sender: UIButton) {
         //faccio partire la pagina per la registrazione
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
-    //funzione per controllare le credenziali di accesso
-    func loginControl() {
-        //prendo i testi delle textfield
-        var emailText: String = emailOutlet.text
-        var passwordText: String = passwordOutlet.text
-        
-        
-    }
-
     /*
     // MARK: - Navigation
 

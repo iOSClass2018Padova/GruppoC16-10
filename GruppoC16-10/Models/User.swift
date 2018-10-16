@@ -32,4 +32,13 @@ import RealmSwift
         self.isAdmin = isAdmin
         
     }
+    
+    
+   static func checkLogin(email1: String, password1: String) -> User?{
+    
+        // Get the default Realm
+        let realm = try! Realm()
+        
+        // Query Realm
+        return realm.objects(User.self).filter($0.email == email1 && $0.password == password1).first
 }
