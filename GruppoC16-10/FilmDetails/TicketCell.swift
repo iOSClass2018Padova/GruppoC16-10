@@ -19,6 +19,7 @@ class TicketCell: UITableViewCell {
     }
     
     @IBOutlet weak var ticketName: UILabel!
+    
     @IBOutlet weak var placeIntText: UILabel!{
         didSet{
             placeIntText.textColor = UIColor.white

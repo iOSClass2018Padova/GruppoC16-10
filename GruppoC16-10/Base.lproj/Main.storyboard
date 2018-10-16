@@ -29,12 +29,20 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gxm-a0-3Ut" kind="relationship" relationship="rootViewController" id="2qu-pJ-Luy"/>
+                        <segue destination="luY-dr-02P" kind="show" id="wBH-xe-EMR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tV6-mb-X1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="780.35982008995506"/>
+        </scene>
+        <!--Homepage-->
+        <scene sceneID="SgD-wx-dcc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Homepage" id="luY-dr-02P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbc-XF-iWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144" y="650"/>
         </scene>
     </scenes>
 </document>

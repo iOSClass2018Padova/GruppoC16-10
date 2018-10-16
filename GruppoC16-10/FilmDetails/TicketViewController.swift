@@ -10,13 +10,15 @@ import UIKit
 
 class TicketViewController: UIViewController {
     
-    var userLog : User?
-    var idFilm : String?
+    var idUser : User!
+    var idFilm : String!
+    var listOfTicket : [Ticket]!
 
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listOfTicket = userLog.getTicketList()
         // Do any additional setup after loading the view, typically from a nib.
     }
 }
@@ -28,11 +30,12 @@ extension TicketViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userLog?.getTicketList().count ?? 10
+        return listOfTicket.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TicketCell.kIdent, for: indexPath) as! TicketCell
+        //cell.placeIntText.text = String(listOfTicket[indexPath.row].place)
         return cell
     }
     
