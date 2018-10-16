@@ -26,6 +26,19 @@ class HomepageController: UIViewController {
         super.viewDidLoad()
     
     }
+    
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showPerson":
+            if let destinationController = segue.destination as? SalaController {
+                destinationController.idFilm = ""
+            }
+        default:
+            break
+        }
+    }
+    */
 }
 
 extension HomepageController : UITableViewDelegate, UITableViewDataSource {
