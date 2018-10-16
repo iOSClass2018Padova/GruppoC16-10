@@ -66,4 +66,21 @@ import RealmSwift
         // Query Realm
         return realm.objects(User.self).filter({ $0.email == email1 && $0.password == password1 }).first
     }
+    
+    func getTicketList()->[Ticket]{
+        return Array(tickets)
+    }
+    
+    static func getUserById(id : String) -> User? {
+        let realm = try! Realm()
+        
+        return realm.objects(User.self).filter({$0.id == id}).first
+    }
+    
+    func addTicketRef(ticket : Ticket) {
+        tickets.insert(ticket, at: tickets.count-1)
+        save()
+    }
+    
+    
 }

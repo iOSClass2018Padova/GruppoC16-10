@@ -18,8 +18,9 @@ import RealmSwift
     dynamic var outputDate : String?
     dynamic var places : Int?
     
-    let times : [String] = []
+    let times : List<String> = List<String>()
     let tickets : List<Ticket> = List<Ticket>()
+
     
     convenience init (title : String? = nil, descr : String? = nil, image: Data? = nil , outputDate : String? = nil, places : Int? = 0) {
         self.init()
@@ -30,8 +31,15 @@ import RealmSwift
         self.image = image
         self.outputDate = outputDate
         self.places = places
+        //self.times.append()
     }
     
+    static func all(in realm: Realm = try! Realm(configuration: RealmUtils.config)) -> [Film] {
+        return Array(realm.objects(Film.self))
+    }
     
+    func getTickes() -> [Ticket] {
+        return Array(tickets)
+    }
 
 }

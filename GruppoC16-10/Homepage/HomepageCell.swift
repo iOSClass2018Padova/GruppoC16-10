@@ -1,5 +1,5 @@
 //
-//  FilmDetailsCell.swift
+//  HomepageCell.swift
 //  GruppoC16-10
 //
 //  Created by Leonardo De Benetti on 16/10/2018.
@@ -8,8 +8,18 @@
 
 import UIKit
 
-class FilmDetailsCell: UITableViewCell {
+class HomepageCell: UITableViewCell {
+    
+    static let kIdentifier = "HomepageCell"
 
+    @IBOutlet weak var imageFilm: UIImageView!
+    
+    @IBOutlet weak var titleFilm: UILabel!
+    
+    @IBOutlet weak var timesFilm: UILabel!
+    
+    @IBOutlet weak var descrFilm: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
