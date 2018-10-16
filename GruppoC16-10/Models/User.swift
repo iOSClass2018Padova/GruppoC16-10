@@ -30,6 +30,17 @@ import RealmSwift
         self.password = password
         self.imageProfile = imageProfile
         self.isAdmin = isAdmin
+    }
+    
+    // MARK: - Realms tuff
+    
+    func save(in realm: Realm = try! Realm()) {
         
+        do {
+            try realm.write {
+                realm.add(self)
+            }
+        }
+        catch {}
     }
 }

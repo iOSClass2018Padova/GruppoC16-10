@@ -94,7 +94,7 @@
                         <outlet property="passwordField" destination="qyK-4m-hge" id="EEV-VJ-30o"/>
                         <outlet property="registerButton" destination="0nF-Uz-Qee" id="VMG-GY-tfj"/>
                         <outlet property="repeatPasswordField" destination="op0-1A-Rhl" id="0Ff-f2-s0r"/>
-                        <segue destination="SQI-Cu-ngc" kind="show" id="NAc-ex-jk5"/>
+                        <segue destination="SQI-Cu-ngc" kind="show" identifier="segueRegisterUSerProfile" id="NAc-ex-jk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ez6-tA-OZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -34,7 +34,7 @@ class RegisterController: UIViewController {
             && passwordField.text == repeatPasswordField.text {
             
             // ok go with other stuff
-            
+            self.performSegue(withIdentifier: Dictionary.segueRegisterUserProfile, sender: self)
         }
         else {
             // show error message
@@ -45,13 +45,18 @@ class RegisterController: UIViewController {
         }
     }
     
-    /*
+    
      // MARK: - Navigation
-     
+    
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        if segue.identifier == Dictionary.segueRegisterUserProfile {
+            if let controller = segue.destination as? UserProfileController {
+                
+                // pass the email and password
+                controller.viewState = UserProfileController.ControllerState.ADDING
+                controller.pushData(email: emailField.text!, password: passwordField.text!)
+            }
+        }
      }
-     */
 }

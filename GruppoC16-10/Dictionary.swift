@@ -6,17 +6,12 @@
 //  Copyright © 2018 developer.llb. All rights reserved.
 //
 
-import Foundation
-
 class Dictionary {
+    static let segueLogin = "segueLoginFilms"
+    static let segueRegistration = "SegueRegistrationFilms"
+    static let segueRoom = "SegueRoom"
+    static let segueTickets = "SegueTickets"
+    static let segueAdministration = "SegueAdministration"
     
-static let segueLogin = "segueLoginFilms"
-static let segueRegistration = "SegueRegistrationFilms"
-static let segueRoom = "SegueRoom"
-static let segueTickets = "SegueTickets"
-static let segueAdministration = "SegueAdministration"
-
-    
-    
+    static let segueRegisterUserProfile = "segueRegisterUSerProfile"
 }
-
