@@ -59,7 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="uwD-SP-gTQ"/>
                                 </constraints>
-                                <state key="normal" title="Back to login"/>
+                                <state key="normal" title="Register now"/>
                                 <connections>
                                     <action selector="register:" destination="KiS-b6-eNu" eventType="touchUpInside" id="POP-0U-VIc"/>
                                 </connections>
@@ -83,7 +83,7 @@
                     <connections>
                         <outlet property="emailOutlet" destination="UeA-pD-0jM" id="NXD-fP-LSJ"/>
                         <outlet property="passwordOutlet" destination="YWR-uQ-T91" id="Wht-Nw-iZF"/>
-                        <segue destination="BEf-3y-MSt" kind="show" identifier="loginIdentifier" id="PfD-eh-vyd"/>
+                        <segue destination="jZH-Ya-jgS" kind="show" identifier="loginIdentifier" id="F4k-YZ-jZ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1x-xr-f8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,12 +91,12 @@
             <point key="canvasLocation" x="55" y="163"/>
         </scene>
         <!--Main-->
-        <scene sceneID="4u6-h7-Hk4">
+        <scene sceneID="wyg-E3-upc">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="BEf-3y-MSt" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hns-Jv-90W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" id="jZH-Ya-jgS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8i-hG-eMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="-65"/>
+            <point key="canvasLocation" x="600" y="12"/>
         </scene>
     </scenes>
 </document>
