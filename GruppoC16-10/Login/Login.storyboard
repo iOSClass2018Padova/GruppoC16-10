@@ -50,6 +50,9 @@
                                     <constraint firstAttribute="width" constant="60" id="vP4-m8-Frn"/>
                                 </constraints>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="KiS-b6-eNu" eventType="touchUpInside" id="85O-7r-rn4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Eb-di-4no">
                                 <rect key="frame" x="87.5" y="577" width="200" height="30"/>
@@ -57,6 +60,9 @@
                                     <constraint firstAttribute="width" constant="200" id="uwD-SP-gTQ"/>
                                 </constraints>
                                 <state key="normal" title="Register Now"/>
+                                <connections>
+                                    <action selector="register:" destination="KiS-b6-eNu" eventType="touchUpInside" id="POP-0U-VIc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +80,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="umi-me-BXy"/>
                     </view>
+                    <connections>
+                        <outlet property="emailOutlet" destination="UeA-pD-0jM" id="bgf-IQ-z6t"/>
+                        <outlet property="passwordOutlet" destination="YWR-uQ-T91" id="Wht-Nw-iZF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1x-xr-f8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

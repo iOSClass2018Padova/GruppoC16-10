@@ -9,12 +9,33 @@
 import UIKit
 
 class LoginController: UIViewController {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    @IBOutlet weak var emailOutlet: UITextField!
+    
+    @IBOutlet weak var passwordOutlet: UITextField!
+    
+    @IBAction func login(_ sender: UIButton) {
+        //faccio dei controlli e poi passo alla lista film
+        
+    }
+    
+    @IBAction func register(_ sender: UIButton) {
+        //faccio partire la pagina per la registrazione
+        
+    }
+    
     
 
     /*
