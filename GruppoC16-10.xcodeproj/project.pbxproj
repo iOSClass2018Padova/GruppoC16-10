@@ -119,6 +119,7 @@
 			children = (
 				B33DED1D2175CE24004DF561 /* RealmUtils.swift */,
 				B33DED1B2175CDE8004DF561 /* Extensions.swift */,
+				B33DED212175D4F7004DF561 /* Models */,
 				B33DED152175CD3C004DF561 /* Login */,
 				B33DED162175CD42004DF561 /* Register */,
 				B33DED1A2175CD96004DF561 /* FilmDetails */,
@@ -201,6 +202,13 @@
 			children = (
 			);
 			path = FilmDetails;
+			sourceTree = "<group>";
+		};
+		B33DED212175D4F7004DF561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
