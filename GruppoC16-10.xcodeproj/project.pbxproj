@@ -32,6 +32,13 @@
 		B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED1D2175CE24004DF561 /* RealmUtils.swift */; };
 		B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33DED242175DE9E004DF561 /* RegisterController.swift */; };
 		B3516E0A2176006900B8B4DE /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3516E092176006900B8B4DE /* Dictionary.swift */; };
+		B3516E0C21760EAB00B8B4DE /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3516E0B21760EAB00B8B4DE /* UserInfoCell.swift */; };
+		B3CD8B412176230900842C8E /* FilmDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD8B3C2176230800842C8E /* FilmDetailsCell.swift */; };
+		B3CD8B422176230900842C8E /* SalaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD8B3D2176230800842C8E /* SalaController.swift */; };
+		B3CD8B432176230900842C8E /* SalaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD8B3E2176230900842C8E /* SalaCell.swift */; };
+		B3CD8B442176230900842C8E /* FilmDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CD8B3F2176230900842C8E /* FilmDetails.storyboard */; };
+		B3CD8B452176230900842C8E /* FilmDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD8B402176230900842C8E /* FilmDetailsController.swift */; };
+		B3CD8B472176299200842C8E /* UserChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CD8B462176299200842C8E /* UserChangePassword.swift */; };
 		B3F482312175FA580017A5ED /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375486D42175DF7A00AC6BAF /* LoginController.swift */; };
 		B3F482322175FB230017A5ED /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B33DED222175D92F004DF561 /* Register.storyboard */; };
 		B3F482352175FBB70017A5ED /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F482332175FBB70017A5ED /* UserProfileController.swift */; };
@@ -91,6 +98,13 @@
 		B33DED222175D92F004DF561 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		B33DED242175DE9E004DF561 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		B3516E092176006900B8B4DE /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		B3516E0B21760EAB00B8B4DE /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		B3CD8B3C2176230800842C8E /* FilmDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailsCell.swift; sourceTree = "<group>"; };
+		B3CD8B3D2176230800842C8E /* SalaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaController.swift; sourceTree = "<group>"; };
+		B3CD8B3E2176230900842C8E /* SalaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaCell.swift; sourceTree = "<group>"; };
+		B3CD8B3F2176230900842C8E /* FilmDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FilmDetails.storyboard; sourceTree = "<group>"; };
+		B3CD8B402176230900842C8E /* FilmDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailsController.swift; sourceTree = "<group>"; };
+		B3CD8B462176299200842C8E /* UserChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChangePassword.swift; sourceTree = "<group>"; };
 		B3F482332175FBB70017A5ED /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		B3F482342175FBB70017A5ED /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		D567C65B184E68384A7420C9 /* Pods_GruppoC16_10.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GruppoC16_10.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +249,8 @@
 			children = (
 				B3F482342175FBB70017A5ED /* UserProfile.storyboard */,
 				B3F482332175FBB70017A5ED /* UserProfileController.swift */,
+				B3516E0B21760EAB00B8B4DE /* UserInfoCell.swift */,
+				B3CD8B462176299200842C8E /* UserChangePassword.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -378,6 +394,7 @@
 				6EDA6F452175CB98002BA7FA /* Assets.xcassets in Resources */,
 				6EDA6F432175CB97002BA7FA /* Main.storyboard in Resources */,
 				B3F482362175FBB70017A5ED /* UserProfile.storyboard in Resources */,
+				B3CD8B442176230900842C8E /* FilmDetails.storyboard in Resources */,
 				375486D32175D98D00AC6BAF /* Login.storyboard in Resources */,
 				B3F482322175FB230017A5ED /* Register.storyboard in Resources */,
 			);
@@ -465,9 +482,13 @@
 				37F5C3AD217631A300070CA0 /* HomepageController.swift in Sources */,
 				B3516E0A2176006900B8B4DE /* Dictionary.swift in Sources */,
 				B3F482312175FA580017A5ED /* LoginController.swift in Sources */,
+				B3CD8B412176230900842C8E /* FilmDetailsCell.swift in Sources */,
+				B3CD8B452176230900842C8E /* FilmDetailsController.swift in Sources */,
 				B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */,
-				6EB4A8FD2176374600D5F570 /* HomepageCell.swift in Sources */,
+				B3CD8B472176299200842C8E /* UserChangePassword.swift in Sources */,
 				6EDA6F6D2175DCDD002BA7FA /* User.swift in Sources */,
+				B3CD8B432176230900842C8E /* SalaCell.swift in Sources */,
+				B3516E0C21760EAB00B8B4DE /* UserInfoCell.swift in Sources */,
 				6EDA6F3E2175CB97002BA7FA /* AppDelegate.swift in Sources */,
 				B3F482352175FBB70017A5ED /* UserProfileController.swift in Sources */,
 				6EDA6F712175E15C002BA7FA /* Film.swift in Sources */,

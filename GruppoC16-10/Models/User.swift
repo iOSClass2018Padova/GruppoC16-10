@@ -44,6 +44,19 @@ import RealmSwift
         catch {}
     }
     
+    func edit(in realm: Realm = try! Realm(), name : String? = nil, surname : String? = nil, email: String? , imageProfile : Data? = nil, user : User! = nil) {
+        
+        do {
+            try realm.write {
+                self.name = name ?? user?.name ?? self.name
+                self.surname = surname ?? user?.surname ?? self.surname
+                self.email = email ?? user?.email ?? self.email
+                self.imageProfile = imageProfile ?? user?.imageProfile ?? self.imageProfile
+            }
+        }
+        catch {}
+    }
+    
     
    static func checkLogin(email1: String, password1: String) -> User? {
     
