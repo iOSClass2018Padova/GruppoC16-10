@@ -59,7 +59,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="uwD-SP-gTQ"/>
                                 </constraints>
-                                <state key="normal" title="Register Now"/>
+                                <state key="normal" title="Back to login"/>
                                 <connections>
                                     <action selector="register:" destination="KiS-b6-eNu" eventType="touchUpInside" id="POP-0U-VIc"/>
                                 </connections>
@@ -90,13 +90,13 @@
             </objects>
             <point key="canvasLocation" x="55" y="163"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Main-->
         <scene sceneID="4u6-h7-Hk4">
             <objects>
-                <viewControllerPlaceholder id="BEf-3y-MSt" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="BEf-3y-MSt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hns-Jv-90W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-61"/>
+            <point key="canvasLocation" x="592" y="-65"/>
         </scene>
     </scenes>
 </document>

@@ -14,4 +14,5 @@ class Dictionary {
     static let segueAdministration = "SegueAdministration"
     
     static let segueRegisterUserProfile = "segueRegisterUSerProfile"
+    static let segueLoginHomepage = "loginIdentifier"
 }

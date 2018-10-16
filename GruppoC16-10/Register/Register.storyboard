@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="height" constant="30" id="48M-N0-JZg"/>
                                     <constraint firstAttribute="width" constant="100" id="mjh-kE-gNg"/>
                                 </constraints>
-                                <state key="normal" title="Back to login"/>
+                                <state key="normal" title="Login now"/>
                                 <connections>
                                     <segue destination="4ga-b0-d5v" kind="show" id="rFK-Ks-f2r"/>
                                 </connections>

@@ -10,7 +10,6 @@ import UIKit
 
 class UserProfileController: UIViewController {
     enum ControllerState {
-        case ADDING
         case SHOW
         case EDITING
     }

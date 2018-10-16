@@ -30,15 +30,15 @@ class LoginController: UIViewController {
     @IBAction func login(_ sender: UIButton) {
     
         //prendo i testi delle textfield
-        var emailText: String = emailOutlet.text
-        var passwordText: String = passwordOutlet.text
+        let emailText: String = emailOutlet.text ?? ""
+        let passwordText: String = passwordOutlet.text ?? ""
     
-        user = User.checkLogin(email1: String, password1: String)
+        user = User.checkLogin(email1: emailText, password1: passwordText)
         
         //se user non è nil
-        if let u = user{
+        if user != nil{
             //vado alla home page (lista film)
-            self.performSegueWithIdentifier("loginIdentifier", sender: self)
+            self.performSegue(withIdentifier: Dictionary.segueLoginHomepage, sender: self)
         }else{
             //faccio un alert dove dico che la mail o la password sono sbagliate
             let alert = UIAlertController(title: "Attenzione", message: "email o password sbagliata", preferredStyle: .alert)

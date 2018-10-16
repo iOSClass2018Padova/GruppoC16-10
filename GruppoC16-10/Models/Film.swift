@@ -17,11 +17,11 @@ import RealmSwift
     dynamic var image : Data?
     dynamic var outputDate : String?
     dynamic var places : Int?
-    dynamic var times : [String]!
     
+    let times : [String] = []
     let tickets : List<Ticket> = List<Ticket>()
     
-    convenience init (title : String? = nil, descr : String? = nil, image: Data? = nil , outputDate : String? = nil, places : Int? = 0, times : [String]? = []) {
+    convenience init (title : String? = nil, descr : String? = nil, image: Data? = nil , outputDate : String? = nil, places : Int? = 0) {
         self.init()
         
         self.id = UUID().uuidString
@@ -30,8 +30,6 @@ import RealmSwift
         self.image = image
         self.outputDate = outputDate
         self.places = places
-        self.times = times
-        
     }
     
     
