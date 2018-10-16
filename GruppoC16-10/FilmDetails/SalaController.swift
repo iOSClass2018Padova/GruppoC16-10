@@ -11,7 +11,8 @@ import UIKit
 class SalaController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource  {
     private var ListPlaces : [Ticket] = []
     
-    
+    var idFilm : String!
+    var idUser : String!
     
     @IBOutlet private weak var CollectionView: UICollectionView!
     
@@ -54,20 +55,20 @@ class SalaController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     
-    @IBAction func actionPlace(_ sender: Any) {
+    @IBAction func actionPlace(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "Prenotazione", message: "Vuoi selezionare questo posto?", preferredStyle: .alert)
         let cancel = UIAlertAction(title: "No", style: .cancel, handler: nil)
         alert.addAction(cancel)
         let okay = UIAlertAction(title: "Si", style: .default) { (alert) in
             
-            
-            
-            
+            //let newTicket : Ticket = Ticket(film: idFilm,place: 1,time: "17:00")
+            //User.getUserById(id: self.idUser)?.addTicketRef(ticket: newTicket)
+            sender.backgroundColor = UIColor.blue
         }
         alert.addAction(okay)
         self.present(alert, animated: true, completion: nil)
-        CollectionView.reloadData()
+        
     }
     
 }

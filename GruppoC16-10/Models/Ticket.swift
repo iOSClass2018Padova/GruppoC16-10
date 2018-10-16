@@ -23,5 +23,28 @@ import RealmSwift
         self.time = time
     }
     
-
+    func add(in realm: Realm = try! Realm()) {
+        do {
+            try realm.write {
+                realm.add(self)
+            }
+        }
+        catch{ }
+    }
+    
+    func remove(in realm: Realm = try! Realm()) {
+        do {
+            try realm.write {
+                realm.add(self)
+            }
+        }
+        catch{ }
+    }
+    
+    static func all(in realm: Realm = try! Realm()) -> [Ticket] {
+        return Array(realm.objects(Ticket.self))
+    }
+    
+    
+    
 }
