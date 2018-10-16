@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		375486D32175D98D00AC6BAF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375486D22175D98D00AC6BAF /* Login.storyboard */; };
-		37F5C3A621762CD000070CA0 /* FilmDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F5C3A321762CCF00070CA0 /* FilmDetailsController.swift */; };
-		37F5C3A721762CD000070CA0 /* FilmDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F5C3A421762CCF00070CA0 /* FilmDetails.storyboard */; };
-		37F5C3A821762CD000070CA0 /* FilmDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F5C3A521762CCF00070CA0 /* FilmDetailsCell.swift */; };
+		37F5C3AC217631A300070CA0 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F5C3A9217631A300070CA0 /* Homepage.storyboard */; };
+		37F5C3AD217631A300070CA0 /* HomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F5C3AA217631A300070CA0 /* HomepageController.swift */; };
+		37F5C3AE217631A300070CA0 /* HomepageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F5C3AB217631A300070CA0 /* HomepageCell.swift */; };
 		6E9F8F28217609BA0069AC4B /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9F8F27217609BA0069AC4B /* TicketCell.swift */; };
 		6E9F8F2B21760CCB0069AC4B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375486D42175DF7A00AC6BAF /* LoginController.swift */; };
 		6E9F8F2D217610CA0069AC4B /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9F8F2C217610CA0069AC4B /* TicketViewController.swift */; };
@@ -57,9 +57,9 @@
 		282EC7938DCB528011C92260 /* Pods-GruppoC16-10.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GruppoC16-10.release.xcconfig"; path = "Pods/Target Support Files/Pods-GruppoC16-10/Pods-GruppoC16-10.release.xcconfig"; sourceTree = "<group>"; };
 		375486D22175D98D00AC6BAF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		375486D42175DF7A00AC6BAF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		37F5C3A321762CCF00070CA0 /* FilmDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailsController.swift; sourceTree = "<group>"; };
-		37F5C3A421762CCF00070CA0 /* FilmDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FilmDetails.storyboard; sourceTree = "<group>"; };
-		37F5C3A521762CCF00070CA0 /* FilmDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmDetailsCell.swift; sourceTree = "<group>"; };
+		37F5C3A9217631A300070CA0 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
+		37F5C3AA217631A300070CA0 /* HomepageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageController.swift; sourceTree = "<group>"; };
+		37F5C3AB217631A300070CA0 /* HomepageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageCell.swift; sourceTree = "<group>"; };
 		6E9F8F27217609BA0069AC4B /* TicketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
 		6E9F8F2C217610CA0069AC4B /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		6E9F8F2E217612B70069AC4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +236,9 @@
 		B33DED182175CD4E004DF561 /* Homepage */ = {
 			isa = PBXGroup;
 			children = (
+				37F5C3A9217631A300070CA0 /* Homepage.storyboard */,
+				37F5C3AB217631A300070CA0 /* HomepageCell.swift */,
+				37F5C3AA217631A300070CA0 /* HomepageController.swift */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -250,9 +253,6 @@
 		B33DED1A2175CD96004DF561 /* FilmDetails */ = {
 			isa = PBXGroup;
 			children = (
-				37F5C3A421762CCF00070CA0 /* FilmDetails.storyboard */,
-				37F5C3A521762CCF00070CA0 /* FilmDetailsCell.swift */,
-				37F5C3A321762CCF00070CA0 /* FilmDetailsController.swift */,
 				6E9F8F2C217610CA0069AC4B /* TicketViewController.swift */,
 				6E9F8F27217609BA0069AC4B /* TicketCell.swift */,
 				6EDA6F742175EBDA002BA7FA /* Tickets.storyboard */,
@@ -366,10 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F5C3AC217631A300070CA0 /* Homepage.storyboard in Resources */,
 				6EDA6F752175EBDA002BA7FA /* Tickets.storyboard in Resources */,
 				6EDA6F482175CB98002BA7FA /* LaunchScreen.storyboard in Resources */,
 				6EDA6F452175CB98002BA7FA /* Assets.xcassets in Resources */,
-				37F5C3A721762CD000070CA0 /* FilmDetails.storyboard in Resources */,
 				6EDA6F432175CB97002BA7FA /* Main.storyboard in Resources */,
 				B3F482362175FBB70017A5ED /* UserProfile.storyboard in Resources */,
 				375486D32175D98D00AC6BAF /* Login.storyboard in Resources */,
@@ -450,18 +450,18 @@
 				6E9F8F2B21760CCB0069AC4B /* LoginController.swift in Sources */,
 				6E9F8F28217609BA0069AC4B /* TicketCell.swift in Sources */,
 				B33DED252175DE9E004DF561 /* RegisterController.swift in Sources */,
+				37F5C3AE217631A300070CA0 /* HomepageCell.swift in Sources */,
 				6EDA6F6F2175DE28002BA7FA /* Ticket.swift in Sources */,
-				37F5C3A621762CD000070CA0 /* FilmDetailsController.swift in Sources */,
 				6E9F8F2F217612B70069AC4B /* ViewController.swift in Sources */,
 				6E9F8F2D217610CA0069AC4B /* TicketViewController.swift in Sources */,
 				B33DED1E2175CE24004DF561 /* RealmUtils.swift in Sources */,
+				37F5C3AD217631A300070CA0 /* HomepageController.swift in Sources */,
 				B3516E0A2176006900B8B4DE /* Dictionary.swift in Sources */,
 				B3F482312175FA580017A5ED /* LoginController.swift in Sources */,
 				B33DED1C2175CDE8004DF561 /* Extensions.swift in Sources */,
 				6EDA6F6D2175DCDD002BA7FA /* User.swift in Sources */,
 				6EDA6F3E2175CB97002BA7FA /* AppDelegate.swift in Sources */,
 				B3F482352175FBB70017A5ED /* UserProfileController.swift in Sources */,
-				37F5C3A821762CD000070CA0 /* FilmDetailsCell.swift in Sources */,
 				6EDA6F712175E15C002BA7FA /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

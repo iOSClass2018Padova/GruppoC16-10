@@ -15,6 +15,7 @@ class HomepageController: UIViewController {
     private var selectedFilm : Film?
     var idUser : String!
 
+    var userLogin : User = User()
     
     var listOfFilm : [Film] = [
         Film(title: "Iron Man 3", descr: "At a New Year's Eve party in 1999, Tony Stark meets scientist Maya Hansen, the inventor of experimental regenerative treatment Extremis that allows recovery from crippling injuries.", image: nil, outputDate: "12-12-2010", places: 12),
@@ -85,4 +86,11 @@ extension HomepageController : UITableViewDelegate, UITableViewDataSource {
         return 195
     }
     
+}
+
+extension HomepageController {
+    
+    func pushUser(user : User) {
+        userLogin = user
+    }
 }
