@@ -26,9 +26,10 @@ class LoginController: UIViewController {
     
     @IBOutlet weak var passwordOutlet: UITextField!
     
+    
     @IBAction func login(_ sender: UIButton) {
         //faccio dei controlli e poi passo alla lista film
-        
+        loginControl()
     }
     
     @IBAction func register(_ sender: UIButton) {
@@ -36,7 +37,14 @@ class LoginController: UIViewController {
         
     }
     
-    
+    //funzione per controllare le credenziali di accesso
+    func loginControl() {
+        //prendo i testi delle textfield
+        var emailText: String = emailOutlet.text
+        var passwordText: String = passwordOutlet.text
+        
+        
+    }
 
     /*
     // MARK: - Navigation
