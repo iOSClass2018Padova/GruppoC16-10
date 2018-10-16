@@ -27,19 +27,19 @@
                                 <rect key="frame" x="16" y="172" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" smartQuotesType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyK-4m-hge" userLabel="passwordField">
                                 <rect key="frame" x="16" y="226" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ripeti password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="op0-1A-Rhl" userLabel="repeatPasswordField">
                                 <rect key="frame" x="16" y="280" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nF-Uz-Qee" userLabel="registerButton">
                                 <rect key="frame" x="137.5" y="350" width="100" height="40"/>
@@ -56,6 +56,17 @@
                                     <action selector="goButtonClick:" destination="UdH-wf-VHz" eventType="touchUpInside" id="Gqa-jq-36D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ9-Bi-V5W" userLabel="backToLogin">
+                                <rect key="frame" x="137.5" y="605" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="48M-N0-JZg"/>
+                                    <constraint firstAttribute="width" constant="100" id="mjh-kE-gNg"/>
+                                </constraints>
+                                <state key="normal" title="Login now"/>
+                                <connections>
+                                    <segue destination="4ga-b0-d5v" kind="show" id="rFK-Ks-f2r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -66,9 +77,11 @@
                             <constraint firstItem="OXS-hS-ykN" firstAttribute="trailing" secondItem="op0-1A-Rhl" secondAttribute="trailing" constant="16" id="Pub-Tk-5gd"/>
                             <constraint firstItem="qyK-4m-hge" firstAttribute="leading" secondItem="OXS-hS-ykN" secondAttribute="leading" constant="16" id="TCR-La-txR"/>
                             <constraint firstItem="op0-1A-Rhl" firstAttribute="top" secondItem="qyK-4m-hge" secondAttribute="bottom" constant="24" id="U8C-Ot-Lr5"/>
+                            <constraint firstItem="nZ9-Bi-V5W" firstAttribute="centerX" secondItem="JeK-jX-qig" secondAttribute="centerX" id="aaM-yv-z9u"/>
                             <constraint firstItem="0nF-Uz-Qee" firstAttribute="top" secondItem="op0-1A-Rhl" secondAttribute="bottom" constant="40" id="b4V-gd-c4N"/>
                             <constraint firstItem="OXS-hS-ykN" firstAttribute="trailing" secondItem="qyK-4m-hge" secondAttribute="trailing" constant="16" id="euU-eb-eZf"/>
                             <constraint firstItem="mbM-Zm-lJU" firstAttribute="top" secondItem="OXS-hS-ykN" secondAttribute="top" constant="80" id="gX2-sl-jNb"/>
+                            <constraint firstItem="OXS-hS-ykN" firstAttribute="bottom" secondItem="nZ9-Bi-V5W" secondAttribute="bottom" constant="32" id="jpS-gb-Ud8"/>
                             <constraint firstItem="mbM-Zm-lJU" firstAttribute="leading" secondItem="OXS-hS-ykN" secondAttribute="leading" constant="16" id="nbO-TY-0qg"/>
                             <constraint firstItem="op0-1A-Rhl" firstAttribute="leading" secondItem="OXS-hS-ykN" secondAttribute="leading" constant="16" id="s40-YW-v6m"/>
                             <constraint firstItem="8Na-Hd-tn2" firstAttribute="top" secondItem="mbM-Zm-lJU" secondAttribute="bottom" constant="40" id="sPd-vO-tNG"/>
@@ -81,11 +94,28 @@
                         <outlet property="passwordField" destination="qyK-4m-hge" id="EEV-VJ-30o"/>
                         <outlet property="registerButton" destination="0nF-Uz-Qee" id="VMG-GY-tfj"/>
                         <outlet property="repeatPasswordField" destination="op0-1A-Rhl" id="0Ff-f2-s0r"/>
+                        <segue destination="SQI-Cu-ngc" kind="show" identifier="segueRegisterUSerProfile" id="NAc-ex-jk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ez6-tA-OZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-133.59999999999999" y="109.29535232383809"/>
+        </scene>
+        <!--UserProfile-->
+        <scene sceneID="D4e-kV-vAn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserProfile" id="SQI-Cu-ngc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuA-aS-csB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="-161"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="3gM-Vx-YDF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="4ga-b0-d5v" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNz-9p-XBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="390"/>
         </scene>
     </scenes>
 </document>
